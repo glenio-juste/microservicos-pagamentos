@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "0bc09190-ddfe-426f-aeab-9b45b284cbae",
+		"name": "Study",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1702273",
+		"_collection_link": "https://cloudy-firefly-3301.postman.co/workspace/API-Rest~19195e31-f62a-4caa-8729-bd92f2b2f4c1/collection/1702273-0bc09190-ddfe-426f-aeab-9b45b284cbae?action=share&creator=1702273&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/pagamentos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"valor\": 1250,\r\n   \r\n    \"pedidoId\": 1,\r\n    \"formaDePagamentoId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pagamentos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pagamentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:11518/pagamentos/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/pedidos-ms/pedidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"pedidos-ms",
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8082/pedidos-ms/pedidos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/pedidos-ms/pedidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"pedidos-ms",
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8082/pedidos-ms/pedidos/porta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/pedidos-ms/pedidos/porta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"pedidos-ms",
+						"pedidos",
+						"porta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8082/pagamentos-ms/pagamentos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/pagamentos-ms/pagamentos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"pagamentos-ms",
+						"pagamentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8082/pagamentos-ms/pagamentos/2/confirmar",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/pagamentos-ms/pagamentos/2/confirmar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"pagamentos-ms",
+						"pagamentos",
+						"2",
+						"confirmar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
